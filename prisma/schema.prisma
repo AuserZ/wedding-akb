@@ -1,0 +1,31 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Guest {
+  id        Int      @id @default(autoincrement())
+  name      String   @unique
+  createdAt DateTime @default(now())
+}
+
+model Rsvp {
+  id         Int      @id @default(autoincrement())
+  name       String
+  phone      String
+  attendance String
+  guests     Int      @default(1)
+  createdAt  DateTime @default(now())
+}
+
+model Wish {
+  id        Int      @id @default(autoincrement())
+  name      String
+  message   String
+  likes     Int      @default(0)
+  createdAt DateTime @default(now())
+}
