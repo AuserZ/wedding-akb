@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Arief & Nadine — 15 November 2025",
-  description: "Kami mengundang Anda untuk merayakan pernikahan Arief & Nadine.",
+  title: "Akbar & Dina — 15 November 2025",
+  description: "Kami mengundang Anda untuk merayakan pernikahan Akbar & Dina.",
 };
 
 export default function RootLayout({

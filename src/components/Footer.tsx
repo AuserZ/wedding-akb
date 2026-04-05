@@ -51,7 +51,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <span className="ft-names">Arief &amp; Nadine</span>
+          <span className="ft-names">Akbar &amp; Dina</span>
           <p className="ft-copy">2025 &copy; With love. All rights reserved.</p>
           <a href="#hero" className="ft-top" data-cursor-hover>Back to top &uarr;</a>
         </div>

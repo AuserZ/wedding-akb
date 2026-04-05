@@ -1,5 +1,6 @@
 import Nav from '@/components/Nav'
 import Hero from '@/components/Hero'
+import Couple from '@/components/Couple'
 import Story from '@/components/Story'
 import Gallery from '@/components/Gallery'
 import Location from '@/components/Location'
@@ -12,6 +13,8 @@ import CustomCursor from '@/components/CustomCursor'
 import SmoothScroll from '@/components/SmoothScroll'
 import AnimationInit from '@/components/AnimationInit'
 import ImageDivider from '@/components/ImageDivider'
+import DesktopCover from '@/components/DesktopCover'
+import MusicPlayer from '@/components/MusicPlayer'
 
 export default async function Home({
   searchParams,
@@ -22,47 +25,57 @@ export default async function Home({
   const guestName = typeof to === 'string' ? to : 'Tamu Undangan'
 
   return (
-    <>
+    <div className="app-layout">
       <Preloader />
       <CustomCursor />
       <SmoothScroll />
       <AnimationInit />
 
-      <Nav />
-      <Hero guestName={guestName} />
+      {/* Desktop: fixed left photo panel */}
+      <DesktopCover />
 
-      <Story />
+      {/* Main scrollable content (portrait on desktop) */}
+      <main className="content-panel">
+        <Nav />
+        <Hero guestName={guestName} />
 
-      <ImageDivider
-        src="/img/divider1.jpg"
-        alt="Romantic couple"
-        topColor="var(--bg-cream)"
-        bottomColor="#FFFFFF"
-      />
+        <Couple />
 
-      <Gallery />
+        <Story />
 
-      <ImageDivider
-        src="/img/divider2.jpg"
-        alt="Wedding celebration"
-        topColor="#FFFFFF"
-        bottomColor="var(--bg-cream)"
-      />
+        <ImageDivider
+          src="/img/IMG_4290.JPEG"
+          alt="Heart in the sand"
+          topColor="var(--bg-cream)"
+          bottomColor="#FFFFFF"
+        />
 
-      <Location />
-      <RSVP guestName={guestName} />
+        <Gallery />
 
-      <ImageDivider
-        src="/img/divider3.jpg"
-        alt="Beautiful scenery"
-        topColor="#FFFFFF"
-        bottomColor="var(--bg-cream)"
-        height="50vh"
-      />
+        <ImageDivider
+          src="/img/IMG_4199.JPEG"
+          alt="Dina by the rocks"
+          topColor="#FFFFFF"
+          bottomColor="var(--bg-cream)"
+        />
 
-      <Wishes />
-      <Gift />
-      <Footer />
-    </>
+        <Location />
+        <RSVP guestName={guestName} />
+
+        <ImageDivider
+          src="/img/IMG_4299.JPEG"
+          alt="Heart in the sand by the sea"
+          topColor="#FFFFFF"
+          bottomColor="var(--bg-cream)"
+          height="50vh"
+        />
+
+        <Wishes />
+        <Gift />
+        <Footer />
+      </main>
+
+      <MusicPlayer />
+    </div>
   )
 }

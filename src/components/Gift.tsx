@@ -15,8 +15,8 @@ function copy(text: string) {
 }
 
 const BANKS = [
-  { name: 'BCA', number: '8730 1234 567', holder: 'Arief Pratama', color: '#003D79' },
-  { name: 'Mandiri', number: '1300 0567 8901', holder: 'Nadine Kusuma', color: '#003B71' },
+  { name: 'BCA', number: '8730 1234 567', holder: 'Akbar', color: '#003D79' },
+  { name: 'Mandiri', number: '1300 0567 8901', holder: 'Dina', color: '#003B71' },
 ]
 
 export default function Gift() {
@@ -85,7 +85,7 @@ export default function Gift() {
           <h3 className="gift-physical-title">Send a Physical Gift</h3>
           <div className="gift-addr-card">
             <span className="gift-addr-to">Kepada</span>
-            <span className="gift-addr-name">Arief &amp; Nadine</span>
+            <span className="gift-addr-name">Akbar &amp; Dina</span>
             <p className="gift-addr-text">
               <span>Jl. Mangga Dua No. 45</span>
               <span>Jakarta Utara, DKI Jakarta 14430</span>

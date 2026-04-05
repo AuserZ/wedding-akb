@@ -1,17 +1,18 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 
-const ITEMS = [
-  { h: 320, grad: 'linear-gradient(135deg,#2a1022,#3d1530)' },
-  { h: 260, grad: 'linear-gradient(135deg,#1a2a1a,#2a3d2a)' },
-  { h: 380, grad: 'linear-gradient(135deg,#1a1a2a,#2a2a3d)' },
-  { h: 280, grad: 'linear-gradient(135deg,#2a2010,#3d3018)' },
-  { h: 340, grad: 'linear-gradient(135deg,#201a2a,#30243d)' },
-  { h: 240, grad: 'linear-gradient(135deg,#2a1018,#3d1825)' },
-  { h: 300, grad: 'linear-gradient(135deg,#102a2a,#183d3d)' },
-  { h: 360, grad: 'linear-gradient(135deg,#2a1a10,#3d2818)' },
-  { h: 290, grad: 'linear-gradient(135deg,#1a102a,#28183d)' },
+const PHOTOS = [
+  '/img/IMG_4199.JPEG',
+  '/img/IMG_4217.JPEG',
+  '/img/IMG_4234.JPEG',
+  '/img/IMG_4243.JPEG',
+  '/img/IMG_4250.JPEG',
+  '/img/IMG_4251.JPEG',
+  '/img/IMG_4290.JPEG',
+  '/img/IMG_4297.JPEG',
+  '/img/IMG_4299.JPEG',
 ]
 
 export default function Gallery() {
@@ -26,7 +27,7 @@ export default function Gallery() {
         </div>
 
         <div className="gallery-grid">
-          {ITEMS.map((item, i) => (
+          {PHOTOS.map((src, i) => (
             <div
               key={i}
               className="g-item"
@@ -35,9 +36,13 @@ export default function Gallery() {
               onClick={() => setLightbox(i)}
             >
               <div className="reveal-cover" />
-              <div
-                className="reveal-img g-swatch"
-                style={{ height: item.h, background: item.grad }}
+              <Image
+                src={src}
+                alt={`Gallery photo ${i + 1}`}
+                width={400}
+                height={500}
+                className="reveal-img g-photo"
+                style={{ objectFit: 'cover', width: '100%', height: 'auto' }}
               />
               <div className="g-overlay">
                 <span className="g-number">{String(i + 1).padStart(2, '0')}</span>
@@ -54,12 +59,13 @@ export default function Gallery() {
       >
         {lightbox !== null && (
           <div className="lb-inner" onClick={(e) => e.stopPropagation()}>
-            <div
+            <Image
+              src={PHOTOS[lightbox]}
+              alt={`Gallery photo ${lightbox + 1}`}
+              width={600}
+              height={800}
               className="lb-img"
-              style={{
-                height: 420,
-                background: ITEMS[lightbox].grad,
-              }}
+              style={{ objectFit: 'contain', width: '100%', height: 'auto', maxHeight: '85vh' }}
             />
             <button className="lb-close" onClick={() => setLightbox(null)} data-cursor-hover>
               &times;

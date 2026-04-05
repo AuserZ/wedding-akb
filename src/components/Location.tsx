@@ -2,12 +2,12 @@
 
 function downloadICS() {
   const ics = [
-    'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Arief Nadine Wedding 2025//EN',
+    'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Akbar Dina Wedding 2025//EN',
     'CALSCALE:GREGORIAN', 'METHOD:PUBLISH',
     'BEGIN:VEVENT',
-    'UID:arief-nadine-20251115@wedding',
+    'UID:akbar-dina-20251115@wedding',
     'DTSTART:20251115T020000Z', 'DTEND:20251115T100000Z',
-    'SUMMARY:Pernikahan Arief & Nadine',
+    'SUMMARY:Pernikahan Akbar & Dina',
     'LOCATION:Gedung O.B. Sya\'af Lantamal\\, Jl. RE Martadinata\\, Jakarta Utara',
     'DESCRIPTION:Kami mengundang Anda untuk merayakan hari bahagia kami.',
     'END:VEVENT', 'END:VCALENDAR',

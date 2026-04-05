@@ -79,7 +79,7 @@ export default function Hero({ guestName }: { guestName: string }) {
 
         <p className="hero-eyebrow" data-words-slide-up>The Wedding Of</p>
 
-        <h1 className="hero-names" data-line-slide-up>Arief &amp; Nadine</h1>
+        <h1 className="hero-names" data-line-slide-up>Akbar &amp; Dina</h1>
 
         <div className="hero-rule" data-fade-in data-delay="0.4" />
 
