@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Akbar & Dina — 15 November 2025",
+  title: "Akbar & Dina — 31 Oktober 2026",
   description: "Kami mengundang Anda untuk merayakan pernikahan Akbar & Dina.",
 };
 

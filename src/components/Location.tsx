@@ -2,11 +2,11 @@
 
 function downloadICS() {
   const ics = [
-    'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Akbar Dina Wedding 2025//EN',
+    'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Akbar Dina Wedding 2026//EN',
     'CALSCALE:GREGORIAN', 'METHOD:PUBLISH',
     'BEGIN:VEVENT',
-    'UID:akbar-dina-20251115@wedding',
-    'DTSTART:20251115T020000Z', 'DTEND:20251115T100000Z',
+    'UID:akbar-dina-20261031@wedding',
+    'DTSTART:20261031T020000Z', 'DTEND:20261031T100000Z',
     'SUMMARY:Pernikahan Akbar & Dina',
     'LOCATION:Gedung O.B. Sya\'af Lantamal\\, Jl. RE Martadinata\\, Jakarta Utara',
     'DESCRIPTION:Kami mengundang Anda untuk merayakan hari bahagia kami.',

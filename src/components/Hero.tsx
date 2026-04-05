@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 
-const WEDDING_DATE = new Date('2025-11-15T00:00:00')
+const WEDDING_DATE = new Date('2026-10-31T00:00:00')
 
 function useCountdown() {
   const [time, setTime] = useState({ d: '000', h: '00', m: '00', s: '00' })
@@ -23,7 +23,7 @@ function useCountdown() {
   return time
 }
 
-const MARQUEE_TEXT = 'We\u2019re Getting Married \u00B7 15 November 2025 \u00B7 Save The Date \u00B7 '
+const MARQUEE_TEXT = 'We\u2019re Getting Married \u00B7 31 Oktober 2026 \u00B7 Save The Date \u00B7 '
 
 export default function Hero({ guestName }: { guestName: string }) {
   const cd = useCountdown()
@@ -83,7 +83,7 @@ export default function Hero({ guestName }: { guestName: string }) {
 
         <div className="hero-rule" data-fade-in data-delay="0.4" />
 
-        <p className="hero-date" data-words-slide-up>Sabtu, 15 November 2025</p>
+        <p className="hero-date" data-words-slide-up>Sabtu, 31 Oktober 2026</p>
 
         <div className="countdown" data-slide-up data-delay="0.3">
           {[

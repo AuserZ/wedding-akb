@@ -46,8 +46,8 @@ export default function Preloader() {
         })}
       </div>
       <div className="preloader-text">
-        <span className="preloader-names">A &amp; N</span>
-        <span className="preloader-date">15 . 11 . 2025</span>
+        <span className="preloader-names">A &amp; D</span>
+        <span className="preloader-date">31 . 10 . 2026</span>
       </div>
     </div>
   )

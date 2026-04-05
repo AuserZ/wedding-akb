@@ -46,13 +46,13 @@ export default function Footer() {
           </div>
           <div className="footer-col">
             <span className="footer-tag">/ Date</span>
-            <p>Saturday<br />15 November 2025</p>
+            <p>Saturday<br />31 Oktober 2026</p>
           </div>
         </div>
 
         <div className="footer-bottom">
           <span className="ft-names">Akbar &amp; Dina</span>
-          <p className="ft-copy">2025 &copy; With love. All rights reserved.</p>
+          <p className="ft-copy">2026 &copy; With love. All rights reserved.</p>
           <a href="#hero" className="ft-top" data-cursor-hover>Back to top &uarr;</a>
         </div>
 

@@ -20,7 +20,7 @@ const ITEMS = [
     side: 'left' as const,
   },
   {
-    date: 'November 2025',
+    date: 'Oktober 2026',
     title: 'Forever Begins',
     desc: 'Awal dari perjalanan baru sebagai satu. Hari yang telah lama kami nantikan.',
     side: 'right' as const,
